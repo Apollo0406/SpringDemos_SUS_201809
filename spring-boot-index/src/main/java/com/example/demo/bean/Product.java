@@ -1,25 +1,18 @@
-package com.example.springboothelloworld.Product;
+package com.example.demo.bean;
 
 public class Product {
-    private long id;
     private String name;
+    private Long id;
     private Double price;
-
-    public Product(long id, String name, Double price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-    }
 
     public Product() {
     }
 
-    public long getId() {
-        return id;
-    }
+    public Product(String name, Long id, Double price) {
 
-    public void setId(long id) {
+        this.name = name;
         this.id = id;
+        this.price = price;
     }
 
     public String getName() {
@@ -30,11 +23,19 @@ public class Product {
         this.name = name;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setCount(Double price) {
         this.price = price;
     }
 }
