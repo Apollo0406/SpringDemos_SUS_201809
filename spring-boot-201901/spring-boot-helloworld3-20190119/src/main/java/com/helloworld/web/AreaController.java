@@ -44,7 +44,7 @@ public class AreaController {
     @RequestMapping(value = "/modifyarea",method = RequestMethod.POST)
     private Map<String,Object> modifyArea(@RequestBody Area area){
         Map<String,Object> modelMap = new HashMap<>();
-        modelMap.put("success",areaService.modifyArea(area);
+        modelMap.put("success",areaService.modifyArea(area));
         return modelMap;
     }
 
